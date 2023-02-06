@@ -1,0 +1,51 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  /* Based on Yale */
+  --ifm-color-primary: #06437c;
+  --ifm-color-primary-dark: #053c70;
+  --ifm-color-primary-darker: #053969;
+  --ifm-color-primary-darkest: #042f57;
+  --ifm-color-primary-light: #074a88;
+  --ifm-color-primary-lighter: #074d8f;
+  --ifm-color-primary-lightest: #0857a1;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-link-color: #1a76d9;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  /* Based on Maya */
+  --ifm-color-primary: #23a5dc;
+  --ifm-color-primary-dark: #2095c6;
+  --ifm-color-primary-darker: #1e8cbb;
+  --ifm-color-primary-darkest: #18749a;
+  --ifm-color-primary-light: #39aee0;
+  --ifm-color-primary-lighter: #44b3e1;
+  --ifm-color-primary-lightest: #65c0e6;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-link-color: #1a76d9;
+}
+
+[data-theme='dark'] .hero__title {
+  color: #fff;
+}
+
+/* Mermaid graph styling */
+.mermaid {
+  margin: 2em 0;
+}
+.mermaid .node.mermaidMutedElement rect {
+  fill: #eee !important;
+  stroke: #bbb !important;
+  color: #666;
+}
+.mermaid .node.mermaidMutedElement .label span {
+  color: #666 !important;
+}

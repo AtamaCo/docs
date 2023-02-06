@@ -1,0 +1,25 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+ .heroBanner {
+  padding: 5rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background: #033161 url("/img/background-tilted-pattern-blue.png");
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
+  color: #fff;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+[data-theme='dark'] .heroBanner {
+  background: #312251 url("/img/background-tilted-pattern-purple.png");
+}
