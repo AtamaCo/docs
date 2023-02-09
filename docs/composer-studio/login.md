@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Login
 
-1. Navigate to https://studio.atama.co
+1. Navigate to https://composer.atama.app
 2. Enter your organization name. For example, "acme".
 3. The next step depends on your organization's settings:
     1. Use one of the provided Single Sign-On (SSO) providers.
