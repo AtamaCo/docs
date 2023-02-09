@@ -28,4 +28,4 @@ const client = new FetcherAtama({
 | config.apiKey | `string` | - | Yes | An API Key for the [Delivery API](../delivery-api.md) |
 | config.workspaceId | `string` | - | Yes | The id of the workspace you used to publish experiences. |
 | config.environment | `preview` or `prod` | `prod` | No | Whether you want to use the ["preview" or "production" environment](../delivery-api.md#environments) |
-| config.url | `string` | `https://cdn.prod-composer.atama.land` | No | An alternative URL to use for the Delivery API. |
+| config.url | `string` | `https://cdn.atama.app` | No | An alternative URL to use for the Delivery API. |
