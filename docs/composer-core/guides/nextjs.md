@@ -2,7 +2,7 @@
 
 [Next.js](https://nextjs.org) is an open source React-based framework created by [Vercel](https://vercel.com/). Our CX Framework for Next.js supports [Static Site Generation](https://nextjs.org/docs/basic-features/data-fetching/get-static-props) (with [Incremental Static Regeneration](https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration)) as well as [Server Side Rendering](https://nextjs.org/docs/basic-features/data-fetching/get-server-side-props).
 
-Consider using our [Quickstart](https://studio.atama.co/quickstart) to get a ready-to-use setup. You can also go through the steps below to understand how our CX Framework works with Next.js.
+Consider using our [Quickstart](https://composer.atama.app/quickstart) to get a ready-to-use setup. You can also go through the steps below to understand how our CX Framework works with Next.js.
 
 :::info
 

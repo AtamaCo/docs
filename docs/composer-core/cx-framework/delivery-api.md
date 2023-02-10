@@ -9,7 +9,7 @@ The Delivery API is capable of serving a list of paths, as well as a specific pa
 ## Authentication
 Every request to the Delivery API requires a `Authorization: Bearer {token}` header.
 
-You can generate a new API key in your [Account Settings](https://studio.atama.co/organization/misc/account-settings):
+You can generate a new API key in your [Account Settings](https://composer.atama.app/organization/misc/account-settings):
 1. Select the workspace that the key is for.
 2. Click the "Generate API Key" button.
 3. Copy/paste one value at a time to where you need it.

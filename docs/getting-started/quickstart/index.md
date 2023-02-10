@@ -11,7 +11,7 @@ It may seem overwhelming to get started but don't worry, we've got you covered. 
 Our quickstart offers a streamlined way to set up a demo with Atama Composer. Following the steps below, you should be up and running in less than 10 minutes.
 
 1. Register for Atama
-2. Navigate to [studio.atama.co/quickstart](https://studio.atama.co/quickstart)
+2. Navigate to [composer.atama.app/quickstart](https://composer.atama.app/quickstart)
 3. Follow the steps of the quickstart guide (see details below)
 
 ---
