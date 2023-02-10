@@ -64,12 +64,10 @@ Coming soon.
 
 :::
 
+See our [JSONata reference](../composer-core/jsonata-reference.md) for examples.
+
 ## Delete Provider Mapping
 
-:::info
-
-Coming soon.
-
-:::
-
-See our [JSONata reference](../composer-core/jsonata-reference.md) for examples.
+1. Open the business capability that you want to remove the provider mapping from.
+2. Under "Mappings" click on the mapping you wish to delete
+3. Use the menu on the top-right and click on "Delete"

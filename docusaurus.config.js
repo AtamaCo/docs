@@ -127,6 +127,7 @@ async function getConfig() {
         prism: {
           theme: lightCodeTheme,
           darkTheme: darkCodeTheme,
+          additionalLanguages: ['graphql'],
         },
         colorMode: {
           respectPrefersColorScheme: true
