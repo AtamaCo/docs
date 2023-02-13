@@ -23,7 +23,7 @@ A component is a block within an [experience](../experience/index.md) for a spec
     4. "Content Property Configuration" – JSON Schema for the component’s content properties.
     5. "Visual Property Configuration" – JSON Schema for the component’s visual properties.
 5. Click "Create".
-6. Once the component type has been created, you need to map one or more [business capabilities](../business-capability.md) to it via [JSONata](https://docs.jsonata.org) queries (see example below).
+6. Once the component type has been created, you need to map one or more [business capabilities](../../../composer-core/business-capability.md) to it via [JSONata](https://docs.jsonata.org) queries (see example below).
 
 ### Content properties
 
@@ -136,7 +136,7 @@ The following JSONata maps a business capability to a component type with a slig
 }
 ```
 
-Please refer to our [JSONata reference doc](../../composer-core/jsonata-reference.md) for examples of advanced mapping use cases.
+Please refer to our [JSONata reference doc](../../../reference/jsonata-reference.md) for examples of advanced mapping use cases.
 
 ## Edit Component Type
 

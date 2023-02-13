@@ -2,7 +2,7 @@
 
 :::info
 
-We have a guide explaining how to integrate Composer Core with Next.js: [Next.js CX Framework Guide](../../guides/nextjs.md)
+We have a guide explaining how to integrate Composer Core with Next.js: [Next.js CX Framework Guide](../integration/nextjs.md)
 
 :::
 
@@ -12,7 +12,7 @@ Returns a [`getServerSideProps`](https://nextjs.org/docs/basic-features/data-fet
 
 | Parameter | Type | Default | Required? | Description |
 |:----------|:-----|:--------|:----------|:------------|
-| fetcher | `Fetcher` | - | Yes | An instance of a [fetcher](/docs/composer-core/cx-framework/fetcher). |
+| fetcher | `Fetcher` | - | Yes | An instance of a [fetcher](../../cx-framework/fetcher/README.md). |
 | slug | `string` | - | No | Optional slug (page path) if you want to request experience data for a specific page only. |
 
 ## `getStaticPropsFactory(fetcher)`
@@ -21,7 +21,7 @@ Returns a [`getStaticProps`](https://nextjs.org/docs/basic-features/data-fetchin
 
 | Parameter | Type | Default | Required? | Description |
 |:----------|:-----|:--------|:----------|:------------|
-| fetcher | `Fetcher` | - | Yes | An instance of a [fetcher](/docs/composer-core/cx-framework/fetcher). |
+| fetcher | `Fetcher` | - | Yes | An instance of a [fetcher](../../cx-framework/fetcher/README.md). |
 | revalidate | `number` | 60 | No | The revalidation timeout. See [Incremental Static Regeneration](https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration) for details. |
 | prefix | `string` | - | No | A prefix to use for all routes. |
 | slug | `string` | - | No | Optional slug (page path) if you want to request experience data for a specific page only. |

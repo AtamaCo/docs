@@ -54,7 +54,7 @@ Publishers are associated with channels and make sure that the data gets to the 
 4. On the right hand side, click on "Create publisher config"
 5. Fill out all the required form fields:
     1. "Select publisher type" - The type that you select here needs to work with the type of channel this is for.
-    2. "Supported publishing features" - This defines where you can publish experiences to. At least 'Production' should be selected in most cases. How "Preview" is handled depends on the channel and publisher. For example, for the web channel it assumes that you have a clone of your production site with a slightly different config (see `config.environment` in [FetcherAtama](../composer-core/cx-framework/fetcher/fetcher-atama.md#api)).
+    2. "Supported publishing features" - This defines where you can publish experiences to. At least 'Production' should be selected in most cases. How "Preview" is handled depends on the channel and publisher. For example, for the web channel it assumes that you have a clone of your production site with a slightly different config (see `config.environment` in [FetcherAtama](../developer-guides/cx-framework/fetcher/fetcher-atama.md#api)).
     3. "Supported unpublishing features" - This defines where you can unpublish experiences from. Note that not all channels support unpublishing (e.g. email, SMS, etc.).
     4. "Publisher configuration" - Depending on the type of publisher, you'll need to fill out one or more additional fields to configure the publisher. This may include things like API keys or publish domains.
 6. Click "Create" when you're ready.

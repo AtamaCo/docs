@@ -26,7 +26,7 @@ To see all business capabilities, navigate to the "Capabilities" page from the o
 Once the business capability is created, here are some next steps that may make sense for you:
 
 * Change the business capability schema ([see below](#edit-schema)) - This is recommended because business capabilities should represent models that make sense for the business and not map 1:1 to source systems.
-* [Map the business capability to a component type](./component/index.md#example-mapping)
+* [Map the business capability to a component type](../composer-studio/authoring-guides/component/index.md#example-mapping)
 * Add additional providers to the business capability
 
 ## Edit Business Capability
@@ -64,7 +64,7 @@ Coming soon.
 
 :::
 
-See our [JSONata reference](../composer-core/jsonata-reference.md) for examples.
+See our [JSONata reference](../reference/jsonata-reference.md) for examples.
 
 ## Delete Provider Mapping
 

@@ -2,7 +2,7 @@
 
 :::info
 
-Please refer to the [Next.js guide](../../guides/nextjs.md) if you want to see the React Renderer in action.
+Please refer to the [Next.js guide](../integration/nextjs.md) if you want to see the React Renderer in action.
 
 :::
 
