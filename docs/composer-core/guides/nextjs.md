@@ -33,7 +33,11 @@ Don't forget to add the environment variables when deploying to your hosting pla
 
 :::
 
-3. Create a `lib/atama.ts` file
+## Data
+
+The following section shows how you can render data from your data business capabilities.
+
+1. Create a `lib/atama.ts` file
 
 ```ts
 import type { Fetcher } from '@atamaco/rendering-connectors-utils';
@@ -66,7 +70,7 @@ export function Render({
 }
 ```
 
-4. and then create the `LandingPage`
+2. and then create the `LandingPage`
 
 ```tsx
 import type { ReactNode } from 'react';
@@ -88,7 +92,7 @@ export const LandingPage = forwardRef<HTMLDivElement, LandingPageProps>(
 LandingPage.displayName = 'LandingPage';
 ```
 
-5. ... as well as the `Hero` component.
+3. ... as well as the `Hero` component.
 
 ```tsx
 import type { AtamaComponentProps } from '@atamaco/renderer-react';
@@ -112,8 +116,6 @@ export function Hero({
   );
 }
 ```
-
-## Usage
 
 Now that we have the basic setup done we can create an actual page that renders experiences:
 
@@ -147,3 +149,92 @@ export default function ContentPage({
 export const getStaticPaths = getStaticPathsFactory(fetcher);
 export const getStaticProps = getStaticPropsFactory(fetcher);
 ```
+
+## Actions
+
+1. Create an API route `/api/actions/[action].ts`:
+
+```ts
+import { createActionHandler } from '@atamaco/nextjs';
+
+import { fetcher } from '../../../lib/atama';
+
+const handler = createActionHandler(fetcher);
+
+export default handler;
+```
+
+:::info
+
+You can also choose a different path for the API route if this conflicts with your existing setup. If you choose a different path make sure to pass the path to the `action` method as `apiRoutePath`.
+
+:::
+
+
+2. Create a `newsletter-signup.tsx` component.
+
+:::info
+
+This example is using [@tanstack/react-query](https://tanstack.com/query/v3/) so make sure to install it with: `npm i @tanstack/react-query`. Make sure to add the `QueryClientProvider` to your app. See the [TanStack Query Quick Start](https://tanstack.com/query/v3/docs/react/quick-start) docs.
+
+:::
+
+```tsx
+import type {
+  AtamaComponentProps,
+  AtamaActions
+} from '@atamaco/renderer-react';
+
+export interface NewsletterSignupProps {
+  title: string;
+  atama?: AtamaComponentProps;
+  actions?: AtamaActions;
+}
+
+export function NewsletterSignup({
+  title,
+  atama,
+  actions,
+}: NewsletterSignupProps) {
+  const formRef = useRef<HTMLFormElement>(null);
+
+  const actionId = actions?.find(
+    (_action) => _action.key === 'newsletter-signup',
+  )?.actionId;
+
+  if (!actionId) {
+    throw new Error('No actionId found for newsletter-signup action');
+  }
+
+  const { mutate, data, isLoading } = useMutation(
+    action<Array<null | { success: true }>>({
+      actionId,
+      slug: '/index',
+    }),
+  );
+
+  const onSubmit = (event) => {
+    event.preventDefault();
+  };
+
+  return (
+    <section {...atama}>
+      <form
+        onSubmit={onSubmit}
+        ref={formRef}
+      >
+        <h3>{title}</h3>
+        <input
+          type="email"
+          name="email"
+          placeholder="Type your email"
+          required
+        />
+        <button disabled={isLoading}>Subscribe</button>
+      </form>
+    </section>
+  );
+}
+```
+
+3. add the `NewsletterSignup` component to the `components` object in `lib/atama.ts`.

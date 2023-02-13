@@ -34,3 +34,23 @@ Returns a [`getStaticPaths`](https://nextjs.org/docs/basic-features/data-fetchin
 |:----------|:-----|:--------|:----------|:------------|
 | fetcher | `Fetcher` | - | Yes | An instance of a [fetcher](../fetcher/README.md). |
 | config | `object` | <code>{<br />&nbsp;excludedPaths:<br />&nbsp;&nbsp;[<br />&nbsp;&nbsp;&nbsp;'/',<br />&nbsp;&nbsp;&nbsp;'404'<br />&nbsp;&nbsp;]<br />}</code> | No | By default, the homepage as well as the 404 page are excluded from being statically generated because within Next.js ideally you have a `index.tsx` and a `404.tsx` route.<br /><br />The `config` object accepts any parameter from the [`fetcher#getAllPaths` method](../fetcher/README.md#getallpathsconfig-promisestring). |
+
+## `createActionHandler(fetcher)`
+
+Returns an [API Route](https://nextjs.org/docs/api-routes/introduction)-compatible method.
+
+| Parameter | Type | Default | Required? | Description |
+|:----------|:-----|:--------|:----------|:------------|
+| fetcher | `Fetcher` | - | Yes | An instance of a [fetcher](../fetcher/README.md). |
+
+## `action(actionConfig)`
+
+Returns a method that can be executed to run the action. Use with a library like [@tanstack/react-query](https://tanstack.com/query) or [swr](https://swr.vercel.app/).
+
+| Parameter | Type | Default | Required? | Description |
+|:----------|:-----|:--------|:----------|:------------|
+| actionId | `string` | - | Yes | The id of the action to run |
+| slug | `string` | - | Yes | The slug of the page the action is run on |
+| apiRoutePath | `string` | `/api/actions/` | No | The path to run the action against |
+
+The returned method accepts an object adhering to the action business capabilities request schema.
