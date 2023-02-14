@@ -30,3 +30,13 @@ Return the experience data for a specific path.
 
 For examples see [`@atamaco/fetcher-atama`](./fetcher-atama.md).
 You can also learn more about the [`CXExperience`](../cx-experience-format.md) format.
+
+## `action<T, R>(actionConfig): Promise<R>`
+
+Runs an action.
+
+| Parameter | Type   | Default | Required? | Description |
+|:----------|:-------|:--------|:----------|:------------|
+| actionId  | string | -       | Yes       | The id of the action |
+| slug      | string | -       | Yes       | The slug of the page where the action is running |
+| input     | T      | -       | Yes       | The input data for the action |

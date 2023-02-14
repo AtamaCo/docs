@@ -9,7 +9,7 @@ Here are the high level steps that need to happen to create experiences with Com
 1. Create content in source system.
 2. Publish the new/updated entry in source system.
 3. Refresh index in Composer Studio so that new content is included.
-4. [Compose an experience](../composer-studio/experience/index.md) in Atama:
+4. [Compose an experience](../composer-studio/authoring-guides/experience/index.md) in Atama:
    1. Create experience
    2. Add component
    3. Add content source to component

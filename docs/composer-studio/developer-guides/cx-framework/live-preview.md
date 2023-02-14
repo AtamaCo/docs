@@ -20,7 +20,7 @@ npm i @atamaco/renderer-react @atamaco/preview-react
 
 The `@atamaco/preview-react` package exports a `withPreview` [Higher-Order Component](https://reactjs.org/docs/higher-order-components.html) to easily enable live preview. The setup is very similar to the [React Renderer](./renderer/react.md) except that `AtamaRenderer` is wrapped `withPreview`.
 
-See below for an example of a `preview.tsx` page in Next.js. The page slug "preview" is [configured in the blueprint](../../composer-studio/blueprint/index.md#create-blueprint).
+See below for an example of a `preview.tsx` page in Next.js. The page slug "preview" is [configured in the blueprint](../../authoring-guides/blueprint/index.md#create-blueprint).
 
 ```tsx
 import type { CXExperience } from '@atamaco/cx-core';

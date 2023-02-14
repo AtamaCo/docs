@@ -51,7 +51,7 @@ In order for you to use one of your provider's capabilities, you need to assign 
     3. This should open up a separate mapping page.
 5. Write your mapping using JSONata notation.
     1. You can use the source (provider) and target (business capability) schemas and graphs to help you with the mapping exercise.
-    2. Please refer to our [JSONata reference doc](../../composer-core/jsonata-reference.md) for example mappings.
+    2. Please refer to our [JSONata reference doc](../../reference/jsonata-reference.md) for example mappings.
 6. Click "Save" when you're done.
 
 Assuming your business capability is already used by a component, you should now be able to pull in your new provider's capabilities.

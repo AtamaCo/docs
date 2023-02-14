@@ -17,7 +17,7 @@ This guide assumes you've gone through our [quickstart](../quickstart/index.md) 
 
 Here are the typical steps for creating a new component:
 1. Identify a business need that can't be fulfilled with existing components.
-2. Check if there's already a [business capability](../../composer-studio/business-capability.md) for the desired functionality.
+2. Check if there's already a [business capability](../../composer-core/business-capability.md) for the desired functionality.
     1. If not, the business capability should be created first. It's a best practice that development is driven by a business need.
     2. For the purposes of this guide, we'll assume we can re-use an existing business capability.
 3. Develop the component code based on the provided business specifications. This steps happens outside of Atama in whatever codebase or framework that your channel uses.
@@ -192,7 +192,7 @@ In order for the new component to be usable, it needs to be associated with one 
 
 3. Repeat steps 1-2 if you want to map additional business capabilities.
 
-Please refer to our [JSONata reference doc](../../composer-core/jsonata-reference.md) for examples of advanced mapping use cases.
+Please refer to our [JSONata reference doc](../../reference/jsonata-reference.md) for examples of advanced mapping use cases.
 
 ## Add component to blueprint
 

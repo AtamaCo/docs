@@ -52,7 +52,7 @@ If you're expecting a component to be available and it's not, check the [bluepri
 To edit a component you can click on it from the "Placements" panel on the left or you can click on the pencil icon that appears when you hover over the component within the preview.
 
 #### Selecting a content source
-The content source defines what content is loaded into the component. Instead of writing content directly in Atama, it’s brought in from external systems via [providers](../../composer-core/providers/README.md).
+The content source defines what content is loaded into the component. Instead of writing content directly in Atama, it’s brought in from external systems via [providers](../../../composer-core/providers/README.md).
 
 1. Click on "+ Add Content Source".
 2. This opens up a separate overlay that helps you find the right piece of content.

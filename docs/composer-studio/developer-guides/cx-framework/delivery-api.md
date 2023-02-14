@@ -90,6 +90,11 @@ The table lists out all `GetDataInput` parameters:
 The returned `Data` object describes your experience and has a more complex definition:
 
 ```graphql
+type {
+  key: String!
+  actionId: String!
+}
+
 type DataComponents {
   correlationId: String!
   placementId: String!
@@ -97,7 +102,7 @@ type DataComponents {
   contentProperties: JSON!
   visualProperties: JSON!
   componentTypeName: String!
-  actionIds: [String]
+  actions: [DataComponentAction]
 }
 
 type DataPlacements {
@@ -137,7 +142,7 @@ Example response:
       "code": "top",
       "components": [
         {
-          "actionIds": [],
+          "actions": [],
           "componentTypeName": "Banner",
           "contentProperties": {
             "title": "The world's most organized travel backpack",
@@ -162,7 +167,7 @@ Example response:
       "code": "top-left",
       "components": [
         {
-          "actionIds": [],
+          "actions": [],
           "componentTypeName": "Card",
           "contentProperties": {
             "title": "Boots Designed to Feel Like Sneakers",
@@ -184,7 +189,7 @@ Example response:
       "code": "top-middle",
       "components": [
         {
-          "actionIds": [],
+          "actions": [],
           "componentTypeName": "Card",
           "contentProperties": {
             "title": "The Ultimate Ski Jacket",
@@ -206,7 +211,7 @@ Example response:
       "code": "top-right",
       "components": [
         {
-          "actionIds": [],
+          "actions": [],
           "componentTypeName": "Card",
           "contentProperties": {
             "title": "The last tent you'll ever need",
@@ -233,3 +238,31 @@ Example response:
   "template": "landing-page"
 }
 ```
+
+## `mutation action`
+
+The `action` mutation runs a defined action business capability.
+
+The full mutation definition is defined like this:
+
+```graphql
+action(dataInput: GetDataInput!, actionInput: ActionInput!): [JSON]
+```
+
+where `GetDataInput` is the same type as defined on [`query GetData`](#query-getdata) and `ActionInput` is defined like this:
+
+```graphql
+input ActionInput {
+  actionId: String!
+  input: JSON
+}
+```
+
+The table lists out all `ActionInput` parameters:
+
+| Parameter | Type | Default | Required? | Description |
+|:----------|:-----|:--------|:----------|:------------|
+| actionId | `string` | - | Yes | The id of the action. This is the actionId of an action business capability |
+| input | `json` | - | Yes | The data to send to the action. This is arbitrary data defined as the request schema of the action business capability |
+
+The response is an array of responses from individual providers mapped to the response schema of the action business capability.
