@@ -3,7 +3,6 @@ sidebar_position: 1
 ---
 
 # Providers
-
 Atama providers are lightweight proxies or wrappers around a third party vendor's public APIs, providing a common way for Atama Composer to interact with these systems.
 
 This allows us to decouple Composer implementation details from those of the integrated source systems. For example, the way that you'd fetch a list of blog posts from Wordpress is vastly different from how you might retrieve a product from Adobe Commerce's catalog (REST vs. GraphQL, authentication requirements, etc.). The Providers hide these complexities from the rest of the system and provide an easier method to get content from each system.
@@ -20,7 +19,6 @@ We're always looking for new services to integrate with. Please [contact us](htt
 :::
 
 ## Connect to a new provider
-
 1. Navigate to the "organization" view.
 2. Select "Providers" from the main navigation.
 3. Click the "+ Register a new provider" button.
@@ -32,7 +30,6 @@ We're always looking for new services to integrate with. Please [contact us](htt
 5. Once you have the provider selected, some extra form fields will appear. Depending on the provider, you may need to go through an OAuth authentication flow or provide API credentials. All credentials are stored securely.
 
 ## Create a new provider
-
 Our provider pattern is extensible so you can easily create your own and connect it to Atama.
 
 :::info

@@ -1,9 +1,7 @@
 # JSON
-
 A vendor-agnostic provider to get JSON data from a REST endpoint.
 
 ## Configuration
-
 To connect to a JSON endpoint, you'll need the following information:
 * The full URL of the JSON endpoint
   * Needs to be accessbile via GET request (with `Content-Type: application/json` header)

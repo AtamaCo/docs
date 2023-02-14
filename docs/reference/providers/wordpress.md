@@ -1,9 +1,7 @@
 # WordPress
-
 A provider to connect with WordPress.
 
 ## Configuration
-
 To connect to your WordPress instance, you'll need the following information:
 * Base URL for the WordPress instance (the provider uses the out-of-the-box WordPress [REST API](https://developer.wordpress.org/rest-api/reference/))
 

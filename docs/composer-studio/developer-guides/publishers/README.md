@@ -3,13 +3,9 @@ sidebar_position: 3
 ---
 
 # Publishers
-
 Publishers take composed experiences and create output that works for the respective channel. For example, a static website may require JSON and an email requires HTML.
 
-## Existing Publishers
-
-* AWS S3
-* Sendgrid
+You can see documentation for our [existing publishers](../../../reference/publishers/README.md) here.
 
 :::info
 
@@ -21,7 +17,6 @@ We're always looking for new services to integrate with. Please [contact us](htt
 :::
 
 ## Create a new publisher
-
 Our publisher pattern is extensible so you can easily create your own and connect it to Atama.
 
 :::info

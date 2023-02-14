@@ -1,11 +1,11 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
-# Providers
-For more information, please pick a provider from the navigation on the left.
+# Publishers
+For more information, please pick a publisher from the navigation on the left.
 
-If you're interested in what providers are in general, read more [here](../../composer-core/providers/README.md).
+If you're interested in what publishers are in general, read more [here](../../composer-studio/developer-guides/publishers/README.md).
 
 :::info
 
