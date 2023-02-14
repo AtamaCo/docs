@@ -1,5 +1,7 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 ---
 
-# References
+# Reference
+
+Please refer to the navigation on the left to browse our reference documentation.
