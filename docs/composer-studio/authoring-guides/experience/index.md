@@ -20,7 +20,7 @@ To see all experiences in the current workspace, navigate to the "Experiences" p
 On the overview you can see a list of the experience’s channels and add/remove channels as needed. You can also delete the experience and change its name.
 
 ### Channel Properties
-As the name implies, channel Properties are properties that are specific to a particular channel. For example, a website channel would commonly have SEO properties like title and description, as well as a "[Slug](../../../reference/publishers/aws.md#required-properties)" that’s used in the URL of the page.
+As the name implies, channel Properties are properties that are specific to a particular channel. For example, a website channel would commonly have SEO properties like title and description, as well as a "[Slug](../../../reference/publishers/delivery-api.md#required-properties)" that’s used in the URL of the page.
 
 #### Edit Properties
 To edit the properties, simply update the values in the form fields and click "Apply" when you’re done.

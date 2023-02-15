@@ -1,8 +1,8 @@
-# AWS S3
-A publisher to upload composed experiences to Atama's private AWS S3 bucket.
+# Delivery API
+A publisher to upload composed experiences to Atama so that they can served by the [Delivery API](../../composer-studio/developer-guides/cx-framework/delivery-api.md).
 
 ## Configuration
-You need to configure the following fields when you want to use the AWS S3 publisher:
+You need to configure the following fields when you want to use the Delivery API publisher:
 
 * Preview domain - The domain where your preview site is hosted.
     * Optional - only required if preview is supported by this channel.
@@ -14,7 +14,7 @@ You need to configure the following fields when you want to use the AWS S3 publi
 When publishing an experience with this publisher, the following properties are required:
 
 * Slug - The path segment in the URL that identifies a specific experience.
-    * For example, `/docs/reference/publishers/aws` would be the slug for this page.
+    * For example, `/docs/reference/publishers/delivery-api` would be the slug for this page.
     * Here are some recommended rules to create a proper slug:
       * Starts with a slash /
       * Replace spaces with hyphens -, don’t use any other special characters

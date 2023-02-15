@@ -43,7 +43,7 @@ Here are some technical details about how providers work:
 
 * Providers connect with source systems via their existing APIs. They can use REST, GraphQL, or any other method for accessing data or passing through function calls.
 * A provider can provide both `data` and `action` source capabilities (or just one)
-* When the provider is first configured (see [above](#connect-to-a-new-provider)), Atama reaches out to the source system with the information and credentials you entered.
+* When the provider is first configured (see [how to connect a new provider](#connect-to-a-new-provider)), Atama reaches out to the source system with the information and credentials you entered.
     * As part of this discovery call, we determine the list of source capabilities that the provider supplies.
     * For each source capability, we create a JSON schema representation:
         * Data capabilities only have a single schema
