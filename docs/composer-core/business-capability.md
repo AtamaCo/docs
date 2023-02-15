@@ -7,6 +7,24 @@ Atama introduces a layer of abstraction in order to avoid point-to-point integra
 
 You’ll need to have at least one provider and an associated business capability before you can get Atama running end-to-end.
 
+## Types
+
+### Data
+Data capabilities are any data that is relatively static and doesn't change from one end user to the next.
+
+Here are some examples:
+* single product
+* list of blog posts
+* hero, teaser
+
+### Action
+Action capabilities serve dynamic data or handle user input (POST/PUT requests in the REST world, mutations for GraphQL).
+
+Here are some examples:
+* add to cart
+* submit form
+* show product inventory
+
 ## Show Business Capabilities
 To see all business capabilities, navigate to the "Capabilities" page from the organization context. You can narrow down the list of records by searching and filtering.
 
@@ -17,9 +35,7 @@ To see all business capabilities, navigate to the "Capabilities" page from the o
 4. Fill out all the required form fields:
     1. "Name" - Used to identify the business capability
     2. "Description" - Optional but recommended to provide more details about what the business capability is all about.
-    3. "Type of business capability" - Data or Action.
-        1. "Data" - Examples: `product`, `list of blog posts`
-        2. "Action" - Examples: `add to cart`, `submit form`
+    3. "Type of business capability" - [See above](#types)
     4. "Source capability" - Select the first source capability that this business capability should be mapped to. This will be used as your starting point to define what the business capability is. You can always add additional mappings later ([see below](#add-provider-mapping)) as well as edit the schema of the bisiness capability.
 5. Click "Create" when you're ready.
 
@@ -43,11 +59,11 @@ The text field supports markdown formatting for headlines, lists, etc.
 
 ### Edit schema
 
-:::info
-
-Coming soon.
-
-:::
+1. Open the business capability that you want to edit.
+2. In the bottom half of the screen, select the "Schema" tab.
+3. Click on the button "Edit schema" at the bottom of the editor.
+4. Make your schema updates.
+5. Click "Save" when you're done.
 
 ## Add Provider Mapping
 
@@ -58,24 +74,22 @@ Coming soon.
 
 ## Edit Provider Mapping
 
-:::info
-
-Coming soon.
-
-:::
-
-See our [JSONata reference](../reference/jsonata-reference.md) for examples.
+1. Open the business capability whose mappings you want to edit.
+2. Under "Mappings", click on the mapping you want to change.
+3. A new page with a full screen editor should open. There you can use JSONata to map the source system properties to your business capability properties. See our [JSONata reference](../reference/jsonata-reference.md) for examples.
+    1. If it's an action business capability, select "Request" or "Response" from the headline to add the respective mapping.
 
 ## Delete Provider Mapping
 
 1. Open the business capability that you want to remove the provider mapping from.
-2. Under "Mappings" click on the mapping you wish to delete
-3. Use the menu on the top-right and click on "Delete"
+2. Under "Mappings" click on the mapping you wish to delete.
+3. Use the menu on the top-right and click on "Delete".
 
 ## Refresh Business Capability Data
 
-:::info
+At the moment, we don't have any automatic refresh interval or webhooks set up. That means, to get the latest data from your source systems, you need to manually refresh the index.
 
-Coming soon.
+1. Open the business capability that you want to refresh.
+2. From the hamburger menu in the top right, click on "Refresh data".
+3. You should see an alert show up to inform you about the number of records that were indexed.
 
-:::
