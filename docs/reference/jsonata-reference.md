@@ -1,7 +1,3 @@
----
-sidebar_position: 4
----
-
 # JSONata Reference
 
 We're using JSONata throughout the app for mappings. It's very easy to use and has a ton of out-of-the-box functionality.

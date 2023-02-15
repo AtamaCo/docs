@@ -1,7 +1,3 @@
----
-sidebar_position: 2
----
-
 # Terminology
 
 ### [Blueprint](../composer-studio/authoring-guides/blueprint/index.md)

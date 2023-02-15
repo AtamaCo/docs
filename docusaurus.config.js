@@ -91,13 +91,13 @@ async function getConfig() {
               position: 'left'
             },
             {
-              to: '/docs/reference',
-              label: 'Reference',
-              position: 'right'
-            },
-            {
               to: '/docs/composer-lens',
               label: 'Composer Lens',
+              position: 'left'
+            },
+            {
+              to: '/docs/reference',
+              label: 'Reference',
               position: 'left'
             },
             {
