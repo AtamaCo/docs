@@ -3,17 +3,19 @@ A vendor-agnostic provider to get JSON data from a REST endpoint.
 
 ## Configuration
 To connect to a JSON endpoint, you'll need the following information:
-* The full URL of the JSON endpoint
+* Name of the provider - A user-friendly name to identify the source capability that's provided by the endpoint.
+* Absolute URL of the JSON endpoint
   * Needs to be accessbile via GET request (with `Content-Type: application/json` header)
   * Needs to return either a JSON object or array
+
+Note that the JSON provider assumes that each endpoint only provides one type of data (i.e. one source capability).
 
 ## Supported capabilities
 
 ### Data
-* Flexible
+* Flexible - The JSON gets parsed and object properties end up as properties in your source capability schema. If an array is provided, we take the first object in the array to determine the schema.
 
 ## Example
-
 An example of what the JSON endpoint could return:
 
 ```
