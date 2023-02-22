@@ -26,7 +26,7 @@ We're always looking for new services to integrate with. Please [contact us](htt
    ![Connect provider screen](../../getting-started/connect-new-provider/Connect-new-provider.png)
 4. Once you have the provider selected, some extra form fields will appear. Depending on the provider, you may need to go through an OAuth authentication flow or provide us with API credentials.
 5. Fill out the rest of the form:
-    1. "Name" - You can use the name differentiate instances of the same type. For example, if you have a *Marketing* and a *Intranet* Contentful space, you can label it accordingly.
+    1. "Name" - You can use the name to differentiate instances of the same type. For example, if you have a *Marketing* and a *Intranet* Contentful space, you can label it accordingly.
     2. "Description" - Optional field for additional meta information.
     3. "Visit URL" - Provide the URL of the service where business users usually log into. This is helpful if users want to see all the source data in its origin outside of Atama.
 7. You can confirm that the connection worked by checking that there are source capabilities listed on the provider page.
