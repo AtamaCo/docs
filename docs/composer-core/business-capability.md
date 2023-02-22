@@ -69,7 +69,9 @@ The text field supports markdown formatting for headlines, lists, etc.
 
 1. Open the business capability that you want to add the provider to.
 2. Under "Mappings" click on "+ Add mapping"
+   ![Business capability screen](../getting-started/connect-new-provider/Example-Business-Capability.png)
 3. From the drawer that appears, select the source capability that you want to add. You can search and filter to narrow down the results. If you're missing a source capability, check the [provider](../composer-core/providers/README.md) or add a new one.
+   ![Add mapping screen](../getting-started/connect-new-provider/Select-Source-Capability.png)
 4. This opens up the mapping screen (see instructions below).
 
 ## Edit Provider Mapping
@@ -78,6 +80,8 @@ The text field supports markdown formatting for headlines, lists, etc.
 2. Under "Mappings", click on the mapping you want to change.
 3. A new page with a full screen editor should open. There you can use JSONata to map the source system properties to your business capability properties. See our [JSONata reference](../reference/jsonata-reference.md) for examples.
     1. If it's an action business capability, select "Request" or "Response" from the headline to add the respective mapping.
+
+![Example mapping screen](../getting-started/connect-new-provider/Example-Business-Capability-Mapping.png)
 
 ## Delete Provider Mapping
 

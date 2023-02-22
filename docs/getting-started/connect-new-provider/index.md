@@ -51,11 +51,11 @@ In order for you to use one of your provider's capabilities, you need to assign 
     1. That should open the "Select a Source Capability" overlay.
     2. Use the search and filter to find the source capability that you want to map.
     3. Select one of the source capabilities. That should open up a separate mapping page.
-       ![Add mapping](./Select-Source-Capability.png)
+       ![Add mapping screen](./Select-Source-Capability.png)
 4. Write your mapping using JSONata notation.
     1. You can use the source (provider) and target (business capability) schemas and graphs to help you with the mapping exercise.
     2. Please refer to our [JSONata reference doc](../../reference/jsonata-reference.md) for example mappings.
-    ![Example mapping](./Example-Business-Capability-Mapping.png)
+    ![Example mapping screen](./Example-Business-Capability-Mapping.png)
 5. Click "Save" when you're done.
 
 Assuming your business capability is already used by a component, you should now be able to pull in your new provider's capabilities.
