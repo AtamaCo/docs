@@ -8,12 +8,12 @@ A component is a block within an [experience](../experience/index.md) for a spec
 
 ## Show Component Types
 
-1. Navigate to the "organization" view.
+1. Navigate to [Composer Studio](https://composer.atama.app/studio) and select a workspace.
 2. Select "Component Types" from the main navigation. You can narrow down the results by filtering by a specific channel.
 
 ## Create Component Type
 
-1. Navigate to the "organization" view.
+1. Navigate to [Composer Studio](https://composer.atama.app/studio) and select a workspace.
 2. Select "Component Types" from the main navigation.
 3. Click "Create".
 4. Fill out the form:
@@ -140,7 +140,7 @@ Please refer to our [JSONata reference doc](../../../reference/jsonata-reference
 
 ## Edit Component Type
 
-1. Navigate to the "organization" view.
+1. Navigate to [Composer Studio](https://composer.atama.app/studio) and select a workspace.
 2. Select "Component Types" from the main navigation.
 3. Click on the name of the component type that you want to edit.
 

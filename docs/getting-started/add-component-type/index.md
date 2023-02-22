@@ -95,7 +95,7 @@ export const components = {
 
 Next, you need to let Composer Studio know about your new component.
 
-1. Navigate to the "organization" view.
+1. Navigate to [Composer Studio](https://composer.atama.app/studio) and select a workspace.
 2. Select "Component Types" from the main navigation.
 3. Click "Create".
 4. Fill out the form:

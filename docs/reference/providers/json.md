@@ -1,5 +1,5 @@
 # JSON
-A vendor-agnostic provider to get JSON data from a REST endpoint.
+A vendor-agnostic provider to get JSON data from an HTTPS endpoint.
 
 ## Configuration
 To connect to a JSON endpoint, you'll need the following information:

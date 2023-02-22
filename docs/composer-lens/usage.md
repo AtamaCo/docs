@@ -6,7 +6,7 @@ sidebar_position: 1
 
 Our usage graph shows you a live view of your providers, source capabilities, business capabilities, and bundles.
 
-1. Navigate to the "organization" view.
+1. Navigate to [Composer Lens](https://composer.atama.app/lens).
 2. Select "Usage" from the main navigation.
 3. Use the filters at the top to narrow down what you're interested in.
     1. Metrics

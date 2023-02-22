@@ -19,15 +19,17 @@ We're always looking for new services to integrate with. Please [contact us](htt
 :::
 
 ## Connect to a new provider
-1. Navigate to the "organization" view.
-2. Select "Providers" from the main navigation.
-3. Click the "+ Register a new provider" button.
-4. Fill out the form:
+1. Navigate to [Composer Core > Providers](https://composer.atama.app/core/providers).
+2. Click the "+ Register a new provider" button.
+   ![Providers screen](../../getting-started/connect-new-provider/Providers.png)
+3. Select a provider.
+   ![Connect provider screen](../../getting-started/connect-new-provider/Connect-new-provider.png)
+4. Once you have the provider selected, some extra form fields will appear. Depending on the provider, you may need to go through an OAuth authentication flow or provide us with API credentials.
+5. Fill out the rest of the form:
     1. "Name" - You can use the name to differentiate instances of the same type. For example, if you have a *Marketing* and a *Intranet* Contentful space, you can label it accordingly.
     2. "Description" - Optional field for additional meta information.
     3. "Visit URL" - Provide the URL of the service where business users usually log into. This is helpful if users want to see all the source data in its origin outside of Atama.
-    4. "Provider" - Select the provider.
-5. Once you have the provider selected, some extra form fields will appear. Depending on the provider, you may need to go through an OAuth authentication flow or provide API credentials. All credentials are stored securely.
+7. You can confirm that the connection worked by checking that there are source capabilities listed on the provider page.
 
 ## Create a new provider
 Our provider pattern is extensible so you can easily create your own and connect it to Atama.

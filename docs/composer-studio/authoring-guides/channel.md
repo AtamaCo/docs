@@ -9,7 +9,7 @@ A channel is specific to a workspace. Examples of channels include websites, nat
 To see all channels, navigate to the "Channels" page from the workspace context.
 
 ## Create Channel
-1. If you're in the "organization" view, open one of your workspaces instead.
+1. Navigate to [Composer Studio](https://composer.atama.app/studio) and select a workspace.
 2. Select "Channels" from the main navigation.
 3. Click "+ Create" in the upper right hand corner.
 4. Fill out all the required form fields:
@@ -29,7 +29,7 @@ At the moment we only support web and email channels. Our channel pattern is ver
 :::
 
 ## Edit Channel
-1. If you're in the "organization" view, open one of your workspaces instead.
+1. Navigate to [Composer Studio](https://composer.atama.app/studio) and select a workspace.
 2. Select "Channels" from the main navigation.
 3. Click on the name of the channel that you want to edit.
 4. Make your changes and click "Save". Refer to the descriptions above if you're curious about what each field is used for.
@@ -48,7 +48,7 @@ Deleting a channel is only possible through the API right now. Please [contact u
 Publishers are associated with channels and make sure that the data gets to the channel in the right format.
 
 ### Create Publisher
-1. If you're in the "organization" view, open one of your workspaces instead.
+1. Navigate to [Composer Studio](https://composer.atama.app/studio) and select a workspace.
 2. Select "Channels" from the main navigation.
 3. Click on the name of the channel for which you want to configure the publisher.
 4. On the right hand side, click on "Create publisher config"
@@ -66,7 +66,7 @@ At the moment we only support publishers for web and SendGrid. Our publisher pat
 :::
 
 ### Edit Publisher
-1. If you're in the "organization" view, open one of your workspaces instead.
+1. Navigate to [Composer Studio](https://composer.atama.app/studio) and select a workspace.
 2. Select "Channels" from the main navigation.
 3. Click on the name of the channel for which you want to configure the publisher.
 4. On the right hand side, click on "Edit publisher"
