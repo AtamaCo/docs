@@ -17,7 +17,7 @@ This guide assumes you've gone through our [quickstart](../quickstart/index.md) 
 
 Here are the typical steps for creating a new component:
 1. Identify a business need that can't be fulfilled with existing components.
-2. Check if there's already a [business capability](../../composer-core/business-capability.md) for the desired functionality.
+2. Check if there's already a [business capability](../../composer-core/business-capability/README.md) for the desired functionality.
     1. If not, the business capability should be created first. It's a best practice that development is driven by a business need.
     2. For the purposes of this guide, we'll assume we can re-use an existing business capability.
 3. Develop the component code based on the provided business specifications. This steps happens outside of Atama in whatever codebase or framework that your channel uses.
@@ -104,6 +104,7 @@ Next, you need to let Composer Studio know about your new component.
     3. "Channels" – The component will only be available in blueprints that match the selected channels. **Select at least one channel.**
     4. "Content Property Configuration" – JSON Schema for the component’s content properties. **See example schema below.**
     5. "Visual Property Configuration" – JSON Schema for the component’s visual properties. **See example schema below.**
+    ![Create component type](./Create-Component-Type.png)
 5. Click "Create".
 
 ### Content Property Configuration - Example
@@ -179,7 +180,10 @@ Here's an example schema for the visual properties of the `CtaBanner` component 
 
 In order for the new component to be usable, it needs to be associated with one or more business capabilities. This essentially defines the data that will power the component.
 
-1. Select a business capability from the list
+1. If you're not already on the detail page for the component type, open that up now. You can get there from the "Component Types" link in the main navigation and then clicking on the name of the component in the table.
+  ![Component types](./Component-Types.png)
+2. Click on "+ Add mapping" under the "Mapped data business capabilities" headline.
+  ![Add component type mapping](./Component-Type-Add-Mapping.png)
 2. Add the mapping instructions using JSONata notation. For our example, pick the `Content Element` business capability and then map it like this:
 
 ```json
@@ -189,6 +193,7 @@ In order for the new component to be usable, it needs to be associated with one 
   "buttonText": buttonText
 }
 ```
+  ![Component type mapping](./Component-Type-Example-Mapping.png)
 
 3. Repeat steps 1-2 if you want to map additional business capabilities.
 
@@ -202,6 +207,8 @@ Last but not least, you need to update your blueprint(s) so that your new compon
 2. Click "Blueprints" from the main menu on the left.
 3. Locate the blueprint that you would like to add the component to.
 4. Click on the linked list of "Placements"
+   ![Blueprint placement areas](./Blueprints-Placements.png)
 5. This takes you to a configuration page where you can define what placement area allows what components. To add your component, simply check the box and then hit "Save changes" at the bottom of the page.
+  ![Placement areas](./Blueprint-Placement-Areas-Example.png)
 
 And that's it. Now you should be able to see the component available in the experience editor.

@@ -50,9 +50,9 @@ Here are some technical details about how providers work:
     * For each source capability, we create a JSON schema representation:
         * Data capabilities only have a single schema
         * Action capabiliities have both a "request" and a "response" schema
-* After the initial setup, providers are only called when they're mapped to [business capabilities](../business-capability.md).
+* After the initial setup, providers are only called when they're mapped to [business capabilities](../business-capability/README.md).
     * For data capabilities:
         * Provider data is requested and indexed when a new mapping was added to a business capability.
         * The same happens when mappings are changed or deleted.
-        * You can also manually request [re-indexing](../business-capability.md#refresh-business-capability-data) for specific business capabilities.
+        * You can also manually request [re-indexing](../business-capability/README.md#refresh-business-capability-data) for specific business capabilities.
     * Action capabilities are called directly from your channel experiences (via [components](../../composer-studio/authoring-guides/component/index.md) that map to business capabilities of type action). In this scenario, Atama is just a router to make sure that actions that users take get routed to the proper source system.

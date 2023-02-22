@@ -35,14 +35,16 @@ Here are some examples:
 3. Fill out all the required form fields:
     1. "Name" - Used to identify the business capability
     2. "Description" - Optional but recommended to provide more details about what the business capability is all about.
-    3. "Type of business capability" - [See above](#types)
-    4. "Source capability" - Select the first source capability that this business capability should be mapped to. This will be used as your starting point to define what the business capability is. You can always add additional mappings later ([see below](#add-provider-mapping)) as well as edit the schema of the bisiness capability.
+    3. "Workspaces" - Assigning a workspace helps to narrow the scope of where the business capability can be used.
+    4. "Type of business capability" - [See above](#types)
+    5. "Source capability" - Select the first source capability that this business capability should be mapped to. This will be used as your starting point to define what the business capability is. You can always add additional mappings later ([see below](#add-provider-mapping)) as well as edit the schema of the bisiness capability.
+    ![Create business capability](./Create-business-capability.png)
 4. Click "Create" when you're ready.
 
 Once the business capability is created, here are some next steps that may make sense for you:
 
 * Change the business capability schema ([see below](#edit-schema)) - This is recommended because business capabilities should represent models that make sense for the business and not map 1:1 to source systems.
-* [Map the business capability to a component type](../composer-studio/authoring-guides/component/index.md#example-mapping)
+* [Map the business capability to a component type](../../composer-studio/authoring-guides/component/index.md#example-mapping)
 * Add additional providers to the business capability
 
 ## Edit Business Capability
@@ -54,6 +56,11 @@ The change should take effect immediately on this interface but indexed data wil
 
 ### Edit description
 To edit the business capability description, click on the "Edit" button below the existing description. Make your changes and click "Confirm".
+
+The text field supports markdown formatting for headlines, lists, etc.
+
+### Edit workspaces
+To edit the workspaces that a business capability is assigned to, click on the "Edit workspaces" button below the existing list of workspaces. Make your changes and click "Update".
 
 The text field supports markdown formatting for headlines, lists, etc.
 
@@ -69,19 +76,19 @@ The text field supports markdown formatting for headlines, lists, etc.
 
 1. Open the business capability that you want to add the provider to.
 2. Under "Mappings" click on "+ Add mapping"
-   ![Business capability screen](../getting-started/connect-new-provider/Example-Business-Capability.png)
-3. From the drawer that appears, select the source capability that you want to add. You can search and filter to narrow down the results. If you're missing a source capability, check the [provider](../composer-core/providers/README.md) or add a new one.
-   ![Add mapping screen](../getting-started/connect-new-provider/Select-Source-Capability.png)
+   ![Business capability screen](../../getting-started/connect-new-provider/Example-Business-Capability.png)
+3. From the drawer that appears, select the source capability that you want to add. You can search and filter to narrow down the results. If you're missing a source capability, check the [provider](../../composer-core/providers/README.md) or add a new one.
+   ![Add mapping screen](../../getting-started/connect-new-provider/Select-Source-Capability.png)
 4. This opens up the mapping screen (see instructions below).
 
 ## Edit Provider Mapping
 
 1. Open the business capability whose mappings you want to edit.
 2. Under "Mappings", click on the mapping you want to change.
-3. A new page with a full screen editor should open. There you can use JSONata to map the source system properties to your business capability properties. See our [JSONata reference](../reference/jsonata-reference.md) for examples.
+3. A new page with a full screen editor should open. There you can use JSONata to map the source system properties to your business capability properties. See our [JSONata reference](../../reference/jsonata-reference.md) for examples.
     1. If it's an action business capability, select "Request" or "Response" from the headline to add the respective mapping.
 
-![Example mapping screen](../getting-started/connect-new-provider/Example-Business-Capability-Mapping.png)
+![Example mapping screen](../../getting-started/connect-new-provider/Example-Business-Capability-Mapping.png)
 
 ## Delete Provider Mapping
 
@@ -95,5 +102,6 @@ At the moment we don't have any automatic refresh interval or webhooks set up. T
 
 1. Open the business capability that you want to refresh.
 2. From the hamburger menu in the top right, click on "Refresh data".
+   ![Refresh business capability](./Refresh-Business-Capability.png)
 3. You should see an alert show up to inform you about the number of records that were indexed.
 
