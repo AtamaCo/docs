@@ -18,8 +18,7 @@ To see all blueprints in the current workspace, navigate to the "Blueprints" pag
     4. "Template" - This value is used to connect the blueprint with the templating or layouting system in your channel's codebase.
     5. "Preview Slug" - The live preview within Studio is rendered differently from production pages because it needs to support editing capabilities (read up more about [how preview works](../../developer-guides/cx-framework/live-preview.md)). With the preview slug, you can define the route that's used in your codebase to handle the live preview. The field defaults to `/preview` and more than one blueprint can use the same preview slug.
     6. "Is this blueprint embeddable?" - Check the box if this blueprint can be used in a placement area of another blueprint. You can read up more about [embeddable blueprints](#embeddable-blueprints) below.
-    7. "Does this blueprint support dynamic content sources?" - Read up more about [dynamic content sources](#dynamic-content-sources) below.
-    8. "Metadata Property Configuration" - JSON Schema config for meta properties. Here's an example config for the web channel where SEO title and description are very common.
+    7. "Metadata Property Configuration" - JSON Schema config for meta properties. Here's an example config for the web channel where SEO title and description are very common.
 
     ```
     {
@@ -107,6 +106,3 @@ Follow these steps to set up and use an embeddable blueprint:
 Note that for your embeddable experience to show up everywhere, you'll have to re-publish all experiences using the blueprint that accept the embeddable blueprint.
 
 :::
-
-## Dynamic Content Sources
-Supporting dynamic content sources allows you to select a business capability that automatically publishes an experience for each document. For example, you could create just one experience called "Blog article" and we publish individual experiences for each entry in the "Blog" business capability.

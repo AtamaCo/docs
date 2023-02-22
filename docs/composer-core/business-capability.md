@@ -26,18 +26,18 @@ Here are some examples:
 * show product inventory
 
 ## Show Business Capabilities
-To see all business capabilities, navigate to the "Capabilities" page from the organization context. You can narrow down the list of records by searching and filtering.
+1. Navigate to [Composer Core > Capabilities](https://composer.atama.app/core/business-capabilities).
+2. You can narrow down the list of records by searching and filtering.
 
 ## Create Business Capability
-1. Navigate to the "organization" view.
-2. Select "Capabilities" from the main navigation.
-3. Click "+ Create" in the upper right hand corner.
-4. Fill out all the required form fields:
+1. Navigate to [Composer Core > Capabilities](https://composer.atama.app/core/business-capabilities).
+2. Click "+ Create" in the upper right hand corner.
+3. Fill out all the required form fields:
     1. "Name" - Used to identify the business capability
     2. "Description" - Optional but recommended to provide more details about what the business capability is all about.
     3. "Type of business capability" - [See above](#types)
     4. "Source capability" - Select the first source capability that this business capability should be mapped to. This will be used as your starting point to define what the business capability is. You can always add additional mappings later ([see below](#add-provider-mapping)) as well as edit the schema of the bisiness capability.
-5. Click "Create" when you're ready.
+4. Click "Create" when you're ready.
 
 Once the business capability is created, here are some next steps that may make sense for you:
 
@@ -87,7 +87,7 @@ The text field supports markdown formatting for headlines, lists, etc.
 
 ## Refresh Business Capability Data
 
-At the moment, we don't have any automatic refresh interval or webhooks set up. That means, to get the latest data from your source systems, you need to manually refresh the index.
+At the moment we don't have any automatic refresh interval or webhooks set up. That means to get the latest data from your source systems you need to manually refresh the index.
 
 1. Open the business capability that you want to refresh.
 2. From the hamburger menu in the top right, click on "Refresh data".

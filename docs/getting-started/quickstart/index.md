@@ -34,6 +34,11 @@ If you are not interested in importing demo data into Atama and your source syst
 #### Commerce Landing Page Demo
 This template ships with a commerce frontend (Hydrogen) that lets marketers create landing pages with content being provided by Contentful. The commerce functionality (product listing + detail pages, cart, checkout, etc.) is provided by the respective commerce engine (Shopify) that the front end integrates with outside of Atama.
 
+To go through the quickstart, you'll need the following accounts which should be available for free:
+* [Contentful](https://www.contentful.com/) account
+* [Vercel](https://vercel.com/) account
+* A GitHub, GitLab, or Bitbucket account
+
 :::info
 
 More templates coming soon. If you're looking for something in particular, please [contact us](https://www.atama.co/contact-us).
