@@ -20,7 +20,7 @@ Atama Composer is a composable orchestration platform.
 Here's a quick rundown of how Atama Composer works.
 
 1. **[Providers](../composer-core/providers/README.md)** integrate with your **existing MarTech services** to make their capabilities (content, commerce, search, etc.) available to Composer.
-2. You then have the opportunity to **normalize** the raw "source capabilities" into **[business capabilities](../composer-core/business-capability.md)** that work better for your specific use cases.
+2. You then have the opportunity to **normalize** the raw "source capabilities" into **[business capabilities](../composer-core/business-capability/README.md)** that work better for your specific use cases.
     1. For example, a service may have a product data model that doesn't quite work for your business.
     2. With Atama's approach to business capabilities, you have a chance to define your own and then associate any number of 3rd party services to it that provide the capability.
     3. This is an optional step but will make your maintenance easier in the long run.

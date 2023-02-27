@@ -22,8 +22,11 @@ A component is a block within an [experience](../experience/index.md) for a spec
     3. "Channels" – The component will only be available in blueprints that match the selected channels.
     4. "Content Property Configuration" – JSON Schema for the component’s content properties.
     5. "Visual Property Configuration" – JSON Schema for the component’s visual properties.
+    ![Create component type](../../../getting-started/add-component-type/Create-Component-Type.png)
 5. Click "Create".
-6. Once the component type has been created, you need to map one or more [business capabilities](../../../composer-core/business-capability.md) to it via [JSONata](https://docs.jsonata.org) queries (see example below).
+6. Once the component type has been created, you need to map one or more [business capabilities](../../../composer-core/business-capability/README.md) to it via [JSONata](https://docs.jsonata.org) queries (see example below).
+  ![Add component type mapping](../../../getting-started/add-component-type/Component-Type-Add-Mapping.png)
+  ![Example component type mapping](../../../getting-started/add-component-type/Component-Type-Example-Mapping.png)
 
 ### Content properties
 

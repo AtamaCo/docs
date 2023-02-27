@@ -3,7 +3,7 @@
 ### [Blueprint](../composer-studio/authoring-guides/blueprint/index.md)
 A blueprint defines the layout of the experience and what areas (i.e. Placements) within are editable.
 
-### [Business Capability](../composer-core/business-capability.md)
+### [Business Capability](../composer-core/business-capability/README.md)
 Atama introduces a couple layers of abstraction in order to avoid point-to-point integrations and make lifecycle management easier for large systems. One of those abstractions are business capabilities. They serve as a normalized schema for APIs (i.e. source capabilities) provided by 3rd party services (i.e. providers).
 
 ### [Business Capability Bundle](../composer-core/business-capability-bundle.md)

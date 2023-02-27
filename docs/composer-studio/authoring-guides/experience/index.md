@@ -15,12 +15,20 @@ To see all experiences in the current workspace, navigate to the "Experiences" p
 3. Select a channel.
 4. Select a blueprint.
 
+![Create Experience](./Create-Experience.png)
+
 ## Edit Experience
 ### Overview
 On the overview you can see a list of the experience’s channels and add/remove channels as needed. You can also delete the experience and change its name.
 
+![Experience overview](./Experience-Overview.png)
+
 ### Channel Properties
-As the name implies, channel Properties are properties that are specific to a particular channel. For example, a website channel would commonly have SEO properties like title and description, as well as a "[Slug](../../../reference/publishers/delivery-api.md#required-properties)" that’s used in the URL of the page.
+As the name implies, channel properties are properties that are specific to a particular channel. For example, a website channel would commonly have SEO properties like title and description, as well as a "[Slug](../../../reference/publishers/delivery-api.md#required-properties)" that’s used in the URL of the page.
+
+To view and edit the channel properties, click on the little gear icon next to the channel name in the top toolbar.
+
+![Channel properties](./Channel-Properties.png)
 
 #### Edit Properties
 To edit the properties, simply update the values in the form fields and click "Apply" when you’re done.
@@ -31,6 +39,7 @@ Components are added via the "Placements" panel on the left of the experience ed
 1. Choose a Placement area that you want to add the component to.
 2. You can add components to the end or in-between other already existing components. Hover between the existing components to see the "+ Add Component" prompt.
 3. Open the "Select Component" dropdown.
+   ![Add component](./Add-Component.png)
 4. If you know the Component’s name, you can search for it in the input. Otherwise, select it from the list.
 5. The component should now be added to the preview site and you can move on to the "Edit Component" step below.
 
@@ -47,6 +56,7 @@ To edit a component you can click on it from the "Placements" panel on the left 
 The content source defines what content is loaded into the component. Instead of writing content directly in Atama, it’s brought in from external systems via [providers](../../../composer-core/providers/README.md).
 
 1. Click on "+ Add Content Source".
+   ![Edit component](./Edit-Component.png)
 2. This opens up a separate overlay that helps you find the right piece of content.
     1. To narrow down the results, you can
         1. Search for keywords
@@ -55,6 +65,7 @@ The content source defines what content is loaded into the component. Instead of
     2. The tab "Previously Used Content Sources" lists content that’s already in use in your current Experience.
     3. The tab "All Content Sources" shows all other sources.
 3. Once you’ve found the content entry you want to add, click "+ Add".
+   ![Add content source](./Add-Content-Source.png)
 4. This closes the overlay and updates the preview with the selected data.
 5. If you’re happy with your selection, click "Apply" at the bottom of the panel.
 
