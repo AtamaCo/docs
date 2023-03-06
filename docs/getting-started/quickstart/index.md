@@ -24,12 +24,16 @@ The quickstart guide lets you make a series of selections to put together your c
 3. Studio setup
 4. Deployment
 
+![Screenshot of quickstart start step](./Quickstart.png)
+
 ## Starter template
 The starter template defines what front-end and source system your website starts with. We may also import some demo content into your source system. You can change all this later.
 
-If you are not interested in importing demo data into Atama and your source system, you may skip the quickstart altogether. Simply click the "Skip" button in the upper right hand corner.
+If you are not interested in importing demo data into Atama and your source system, you may skip the quickstart altogether. Simply click the "Quit" button in the upper right hand corner.
+
 
 ### Available starter templates
+![Screenshot of template step](./Select-Template-Quickstart-Atama-Composer.png)
 
 #### Commerce Landing Page Demo
 This template ships with a commerce frontend (Hydrogen) that lets marketers create landing pages with content being provided by Contentful. The commerce functionality (product listing + detail pages, cart, checkout, etc.) is provided by the respective commerce engine (Shopify) that the front end integrates with outside of Atama.
@@ -50,7 +54,20 @@ Atama Composer connects to source systems via their API. We have a pattern calle
 
 Based on the starter template you selected, you'll see one or more providers listed on this step. Some providers allow OAuth authentication and for others you'll need to provide a username/password or API key directly. We store API keys securely and never share them with anyone.
 
+![Screenshot of necessary Contentful connection](./Provider-connect-Quickstart.png)
+Contentful is an example of a provider that uses OAuth to authenticate. Click the "Connect to Contentful" button to go through the authentication flow.
+
+![Screenshot of required Shopify properties](./Provider-Shopify-Quickstart.png)
+The Shopify provider requires you to enter API information manually.
+
+![Screenshot of establishing Contentful connection](./Provider-Contentful-Quickstart.png)
 During the OAuth flow, make sure you grant Atama the requested permissions. Otherwise, we won't be able to properly import demo content or read data.
+
+![Screenshot of Contentful workspace selection](./Provider-Contentful-connected-Quickstart.png)
+If you have multiple Contentful workspaces, make sure to select the one you want to use for Atama. If there's no workspace yet, we'll create one for you called "Atama Composer".
+
+![Screenshot of successful Contentful connection](./Provider-connected-Quickstart.png)
+This is what a successful OAuth connection looks like.
 
 ## Studio setup
 
@@ -61,17 +78,37 @@ The data import step sets up Composer Studio so it's ready to use. The details o
 3. Creating workspace, channels, and provider(s)
 4. Creating business capabilities and experiences
 
-![Screenshot of the import data step](./screenshot-seeding.png)
+![Screenshot of the import data step](./Setup-Progress-Quickstart.png)
+![Screenshot of successful setup step](./Setup-Done-Quickstart.png)
 
 ## Deployment
 In this step you have to pick a hosting service to deploy your project to.
+
+![Screenshot of deployment step](./Deployment-Quickstart.png)
 
 Once you click 'Select' on a hosting vendor, a new window will open. This will guide you through the hosting setup on their end and may include cloning a git repository.
 
 Please leave the quickstart window open so you can copy/paste the API information from the bottom of the page.
 
+![Screenshot of Vercel git step](./vercel-git-provider.png)
+Pick one of the git providers. We're using GitHub in this example.
+
+![Screenshot of Vercel git repository step](./vercel-git-repo.png)
+Enter the name for what the git repository should be called.
+
+![Screenshot of Vercel environment variable step](./vercel-env.png)
+Copy in the required environment variables from the Atama Quickstart screen.
+
+![Screenshot of Vercel deployment step](./vercel-deploy.png)
+The deployment may take a couple of minutes.
+
+![Screenshot of Vercel success](./vercel-success.png)
+Once everything has been successfully deployed, you'll be redirected back to the Atama Quickstart screen.
+
 ## Summary
 And that's it. Once you've completed the deployment step, you should have a full end-to-end demo project running with Atama.
 
-From here, you can either explore Studion on your own, or follow on of our other step-by-step guides.
+![Screenshot of successful Quickstart](./Summary-Quickstart.png)
+
+From here, you can either explore Studio on your own, or follow on of our other step-by-step guides.
 
