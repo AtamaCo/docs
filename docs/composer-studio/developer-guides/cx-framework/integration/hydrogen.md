@@ -2,7 +2,7 @@
 
 :::info
 
-We have a guide explaining how to integrate Composer Core with Hydrogen: [Hydrogen CX Framework Guide](../integration/hydrogen.md)
+We have a guide explaining how to integrate Composer Core with Hydrogen: [Hydrogen CX Framework Guide](../../guides/hydrogen.md)
 
 :::
 

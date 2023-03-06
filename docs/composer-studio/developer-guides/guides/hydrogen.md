@@ -1,6 +1,6 @@
 # Hydrogen
 
-[Hydrogen](https://hydrogen.shopify.dev/) is an open source React-based framework created by [Shopify](https://shopify.com/). Our CX Framework for Hydrogen supports fetching data to drive pages of your Custom Storefront with Atama.
+[Hydrogen](https://hydrogen.shopify.dev/) is an open source React-based framework created by [Shopify](https://shopify.com/). Our CX Framework for Hydrogen supports fetching data to drive pages of your custom storefront with Atama.
 
 Consider going through our [Quickstart](https://composer.atama.app/quickstart) to get a ready-to-use setup. You can also go through the steps below to understand how our CX Framework works with Hydrogen.
 
