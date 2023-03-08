@@ -2,7 +2,7 @@
 
 :::info
 
-We have a guide explaining how to integrate Composer Core with Next.js: [Next.js CX Framework Guide](../integration/nextjs.md)
+We have a guide explaining how to integrate Composer Core with Next.js: [Next.js CX Framework Guide](../../guides/nextjs.md)
 
 :::
 
