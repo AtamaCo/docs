@@ -40,7 +40,7 @@ The following section shows how you can render data from your data business capa
 1. Create a `lib/atama.ts` file
 
 ```ts
-import type { Fetcher } from '@atamaco/rendering-connectors-utils';
+import { AtamaRenderer } from '@atamaco/renderer-react';
 import { FetcherAtama } from '@atamaco/fetcher-atama';
 
 import { Hero } from '../components/atama/hero';
@@ -51,23 +51,18 @@ export const fetcher = new FetcherAtama({
   workspaceId: process.env.ATAMA_WORKSPACE_ID as string,
 });
 
-const layouts = {
+export interface MetaData {
+  seoTitle: string;
+  seoDescription: string;
+}
+
+export const LAYOUTS = {
   LandingPage,
 };
 
-const components = {
+export const COMPONENTS = {
   Hero,
 };
-
-export function Render({
-  data,
-}: {
-  data: Parameters<typeof AtamaRenderer>[0]['data'];
-}) {
-  return (
-    <AtamaRenderer layouts={layouts} components={components} data={data} />
-  );
-}
 ```
 
 2. and then create the `LandingPage`
@@ -122,26 +117,35 @@ Now that we have the basic setup done we can create an actual page that renders 
 Create a `pages/[...slug].tsx` file. This is creating a [dynamic catch all route](https://nextjs.org/docs/routing/dynamic-routes#catch-all-routes).
 
 ```tsx
-import type { InferGetServerSidePropsType, NextPage } from 'next';
+import type { MetaData } from '../lib/atama';
+import type { NextPage } from 'next';
+import type { AtamaProps } from '@atamaco/nextjs';
 
-import {
-  getStaticPropsFactory,
-  getStaticPathsFactory,
-} from '@atamaco/nextjs';
+import { getStaticPropsFactory, getStaticPathsFactory } from '@atamaco/nextjs';
 import Head from 'next/head';
+import { AtamaRenderer } from '@atamaco/renderer-react';
 
-import { fetcher, Renderer } from '../lib/atama';
+import { COMPONENTS, LAYOUTS, fetcher } from '../lib/atama';
 
-export default function ContentPage({
-  data,
-}: InferGetServerSidePropsType<typeof getServerSideProps>) {
+export const ContentPage: NextPage<AtamaProps<MetaData>> = ({ data }) => (
   <>
     <Head>
-      <title>{typeof data?.meta?.seoTitle === 'string' ? data?.meta?.seoTitle : ''}</title>
-      <meta name="description" content={typeof data?.meta?.seoDescription === 'string' ? data?.meta?.seoDescription : ''} />
+      <title>
+        {typeof data?.meta?.seoTitle === 'string' ? data?.meta?.seoTitle : ''}
+      </title>
+      <meta
+        name="description"
+        content={
+          typeof data?.meta?.seoDescription === 'string'
+            ? data?.meta?.seoDescription
+            : ''
+        }
+      />
     </Head>
     <main>
-      <Renderer data={data} />
+      {data && (
+        <AtamaRenderer layouts={LAYOUTS} components={COMPONENTS} data={data} />
+      )}
     </main>
   </>
 );
