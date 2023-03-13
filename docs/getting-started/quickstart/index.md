@@ -3,7 +3,6 @@ sidebar_position: 1
 ---
 
 # Quickstart
-
 A composable orchestration platform like Atama Composer has a lot of moving pieces. If you're new to Atama, we recommend you start with this [introduction](../../getting-started/README.md#overview).
 
 It may seem overwhelming to get started but don't worry, we've got you covered. If you need help at any point during the process, don't hesitate to [contact us](https://www.atama.co/contact-us).
@@ -27,32 +26,49 @@ The quickstart guide lets you make a series of selections to put together your c
 ![Screenshot of quickstart start step](./Quickstart.png)
 
 ## Starter template
-The starter template defines what front-end and source system your website starts with. We may also import some demo content into your source system. You can change all this later.
+The starter template defines what front-end and source system your website starts with. If you choose to connect with your own account vs. our sample ones, we may also import some demo content into your source system. This ensures that we can create a nice end-to-end demo experience. You can easily change everything that's created later.
 
-If you are not interested in importing demo data into Atama and your source system, you may skip the quickstart altogether. Simply click the "Quit" button in the upper right hand corner.
-
+If you prefer to explore and setup Composer by yourself, you may skip the quickstart altogether. Simply click the "Quit" button in the upper right hand corner.
 
 ### Available starter templates
 ![Screenshot of template step](./Select-Template-Quickstart-Atama-Composer.png)
 
-#### Commerce Landing Page Demo
-This template ships with a commerce frontend (Hydrogen) that lets marketers create landing pages with content being provided by Contentful. The commerce functionality (product listing + detail pages, cart, checkout, etc.) is provided by the respective commerce engine (Shopify) that the front end integrates with outside of Atama.
+#### Commerce Landing Page
+This template ships with a commerce frontend (Hydrogen) that lets marketers create landing pages with content being provided by Contentful. The commerce functionality (product listing + detail pages, cart, checkout, etc.) is provided by Shopify and the front end integrates with it outside of Atama.
+* Providers: Contentful
+* Frontend: Hydrogen
 
-To go through the quickstart, you'll need the following accounts which should be available for free:
-* [Contentful](https://www.contentful.com/) account
-* [Vercel](https://vercel.com/) account
-* A GitHub, GitLab, or Bitbucket account
+#### Full Commerce Page
+The difference for this template compared to the "Commerce Landing Page" template is that the commerce functionality (product listing + detail pages, cart, etc.) is using business capabilities managed in Atama. That level of abstraction can come in handy later when you want to test and migrate to use a different commerce provider.
+* Providers: Contentful, Shopify
+* Frontend: Remix
+
+This template shows the value of Atama Composer the best.
+
+#### Marketing Landing Page
+As the name implies, marketers can create landing pages with content being provided by Contentful.
+* Providers: Contentful
+* Frontend: Next.js
+
+These are just starting points so you can get a better feel for Atama Composer. All templates come with a handful of basic React components. You can easily add additional components, services, and front ends (channels) later.
 
 :::info
 
-More templates coming soon. If you're looking for something in particular, please [contact us](https://www.atama.co/contact-us).
+We're always looking to add more useful templates. If you're looking for something in particular, please [contact us](https://www.atama.co/contact-us).
 
 :::
 
 ## Providers
 Atama Composer connects to source systems via their API. We have a pattern called [providers](../../composer-core/providers/README.md) to do this.
 
-Based on the starter template you selected, you'll see one or more providers listed on this step. Some providers allow OAuth authentication and for others you'll need to provide a username/password or API key directly. We store API keys securely and never share them with anyone.
+Based on the starter template you selected, you'll see one or more providers listed on this step.
+
+Some providers allow OAuth authentication and for others you'll need to provide a username/password or API key directly. We store API keys securely and never share them with anyone.
+
+If you don't want to sign up for your own demo accounts, you can use Atama's. You won't be able to edit any content but it's a quick way to get familiar with Atama Composer.
+
+![Screenshot of using Atama's accounts](./Provider-connect-Atama-account-Quickstart.png)
+By default, we'll use Atama's demo accounts as shown here. If you would rather connect to your own accounts, click the "Connect your providers" checkbox.
 
 ![Screenshot of necessary Contentful connection](./Provider-connect-Quickstart.png)
 Contentful is an example of a provider that uses OAuth to authenticate. Click the "Connect to Contentful" button to go through the authentication flow.
@@ -60,7 +76,10 @@ Contentful is an example of a provider that uses OAuth to authenticate. Click th
 ![Screenshot of required Shopify properties](./Provider-Shopify-Quickstart.png)
 The Shopify provider requires you to enter API information manually.
 
-![Screenshot of establishing Contentful connection](./Provider-Contentful-Quickstart.png)
+![Screenshot of logging in with Contentful](./Provider-Contentful-Quickstart.png)
+To start the OAuth flow, log into the service with your account.
+
+![Screenshot of authorizing Contentful connection](./Provider-Contentful-authorize-Quickstart.png)
 During the OAuth flow, make sure you grant Atama the requested permissions. Otherwise, we won't be able to properly import demo content or read data.
 
 ![Screenshot of Contentful workspace selection](./Provider-Contentful-connected-Quickstart.png)
@@ -70,7 +89,6 @@ If you have multiple Contentful workspaces, make sure to select the one you want
 This is what a successful OAuth connection looks like.
 
 ## Studio setup
-
 The data import step sets up Composer Studio so it's ready to use. The details of what it does depend on the template you selected. For most templates, it will import some demo content into your source system. Based on that, we can then create demo business capabilities and experiences.
 
 1. Setting up Composer Studio
