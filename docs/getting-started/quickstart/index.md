@@ -65,10 +65,15 @@ Based on the starter template you selected, you'll see one or more providers lis
 
 Some providers allow OAuth authentication and for others you'll need to provide a username/password or API key directly. We store API keys securely and never share them with anyone.
 
+### Using Atama's demo accounts
+
 If you don't want to sign up for your own demo accounts, you can use Atama's. You won't be able to edit any content but it's a quick way to get familiar with Atama Composer.
 
 ![Screenshot of using Atama's accounts](./Provider-connect-Atama-account-Quickstart.png)
-By default, we'll use Atama's demo accounts as shown here. If you would rather connect to your own accounts, click the "Connect your providers" checkbox.
+By default, we'll use Atama's demo accounts as shown here.
+
+### Using your own accounts
+If you would rather connect to your own accounts, click the "Connect your providers" checkbox.
 
 ![Screenshot of necessary Contentful connection](./Provider-connect-Quickstart.png)
 Contentful is an example of a provider that uses OAuth to authenticate. Click the "Connect to Contentful" button to go through the authentication flow.
@@ -100,7 +105,19 @@ The data import step sets up Composer Studio so it's ready to use. The details o
 ![Screenshot of successful setup step](./Setup-Done-Quickstart.png)
 
 ## Deployment
-In this step you have to pick a hosting service to deploy your project to.
+In this step you have to pick where you want to deploy your website to.
+
+By default, we'll use our git repository and hosting provider.
+
+### Using Atama's hosting
+
+![Screenshot of deployment step using Atama](./Deployment-Atama.png)
+
+![Screenshot of deployment step in progress using Atama](./Deployment-Atama-Progress.png)
+
+![Screenshot of successful deployment step using Atama](./Deployment-Atama-Success.png)
+
+### Using your own hosting
 
 ![Screenshot of deployment step](./Deployment-Quickstart.png)
 
