@@ -20,7 +20,7 @@ You'll need at least the following scopes for the Storefront API integration:
 ## Supported capabilities
 
 ### Data
-* Products – You have access to everything from the [Product API](https://shopify.dev/docs/api/admin-graphql/2023-01/objects/Product), even if it's not shown in the JSON schema or graphs. This may happen because we currently don't follow connections.
+* Products – You have access to everything from the [Product API](https://shopify.dev/docs/api/admin-graphql/2023-01/objects/Product) except connections.
 
 ### Action
 * Get Products
@@ -30,7 +30,7 @@ You'll need at least the following scopes for the Storefront API integration:
 * Get Cart
 
 #### Product query
-This is fragment we use for "Get Product(s)" queries:
+This is the fragment we use for "Get Product(s)" queries:
 
 ```
 fragment AllProductFieldsFragment on Product {
@@ -109,7 +109,7 @@ fragment AllProductFieldsFragment on Product {
 ```
 
 #### Cart query
-This is fragment we use for the "Get Cart" query:
+This is the fragment we use for the "Get Cart" query:
 
 ```
 fragment AllCartFieldFragment on Cart {
