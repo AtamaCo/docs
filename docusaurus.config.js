@@ -9,9 +9,9 @@ async function getConfig() {
 
   /** @type {import('@docusaurus/types').Config} */
   const config = {
-    title: 'Atama Documentation',
+    title: 'Atama Docs',
     tagline: 'Unlock the value of Composable MACH Architecture',
-    url: 'https://docs.atama.co',
+    url: 'https://www.atama.co',
     baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
@@ -72,7 +72,7 @@ async function getConfig() {
           logo: {
             alt: 'Atama Logo',
             src: 'img/atama-logo.svg',
-            width: '120px'
+            width: '120px',
           },
           items: [
             {
