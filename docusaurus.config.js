@@ -73,7 +73,6 @@ async function getConfig() {
             alt: 'Atama Logo',
             src: 'img/atama-logo.svg',
             width: '120px',
-            href: 'https://www.atama.co/docs'
           },
           items: [
             {
