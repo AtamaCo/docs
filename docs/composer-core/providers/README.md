@@ -56,3 +56,9 @@ Here are some technical details about how providers work:
         * The same happens when mappings are changed or deleted.
         * You can also manually request [re-indexing](../business-capability/README.md#refresh-business-capability-data) for specific business capabilities.
     * Action capabilities are called directly from your channel experiences (via [components](../../composer-studio/authoring-guides/component/index.md) that map to business capabilities of type action). In this scenario, Atama is just a router to make sure that actions that users take get routed to the proper source system.
+
+:::info
+
+All our current providers expect content to be published in the source system. There's no way to receive and then publish draft content via Atama Composer.
+
+:::
