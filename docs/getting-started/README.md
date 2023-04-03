@@ -4,16 +4,19 @@ sidebar_position: 1
 
 # Getting Started
 
-Atama Composer is a composable orchestration platform.
+Atama Composer is a digital experience composition (DXP) and orchestration platform.
 
-* For marketers and business users:
-  * Create campaigns **across all your channels** (web, mobile, email, signage, etc.) from a single interface
-  * **Preview experiences** live without the need for a developer
-* For developers:
-  * A **composable architecture** that you can use today
-  * Integrate with 3rd party services using **clear patterns** and **best practices**
-  * Use the latest MACH, Jamstack, [enter buzzword] technology without being hampered by legacy systems
+## Use cases
 
+### For marketers and business users
+* A visual editor for "headless" CMSs
+* Create campaigns **across all your channels** (web, mobile, email, signage, etc.) from a single interface
+* **Preview experiences** live without the need for a developer
+
+### For developers
+* A **composable architecture** that you can use today
+* Integrate with 3rd party services using **clear patterns** and **best practices**
+* **Secure or speed up your legacy sites** – Use the latest MACH, Jamstack, [enter buzzword] technology without being hampered by legacy systems. With Atama Composer, you can cut the "head" off legacy systems and use their capabilities while taking them out of the critical path.
 
 ## Overview
 
