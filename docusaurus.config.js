@@ -142,7 +142,7 @@ async function getConfig() {
           apiKey: '4375e3a9ca0bed2ccb22dc140f07d1e1',
           indexName: 'atama',
           contextualSearch: true,
-          searchPagePath: 'search',
+          searchPagePath: '/docs/search',
         },
       }),
 
